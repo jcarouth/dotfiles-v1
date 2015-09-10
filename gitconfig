@@ -1,0 +1,42 @@
+[alias]
+    # add
+    chunkyadd = add --patch
+
+    # commit
+    amend = commit --amend
+    ammend = commit --amend
+
+    # checkout
+    nb = checkout -b
+[color]
+    branch = auto
+    diff = auto
+    interactive = auto
+    ui = auto
+    pager = true
+[core]
+    pager = less -FRSX
+    whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+    excludesfile = ~/.gitignore
+[difftool "Kaleidoscope"]
+    cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+    prompt = false
+[diff]
+    tool = Kaleidoscope
+[github]
+    user = jcarouth
+[mergetool "Kaleidoscope"]
+    cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+    trustExitCode = true
+[mergetool]
+    prompt = false
+[merge]
+    tool = Kaleidoscope
+[push]
+    default = current
+[user]
+    name = Jeff Carouth
+    email = jcarouth@gmail.com
+[rebase]
+	autosquash = true

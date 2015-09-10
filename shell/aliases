@@ -1,0 +1,43 @@
+# LS aliases
+alias ls='ls -G'
+alias la='ls -AF'
+alias ll='ls -lha'
+
+alias c='clear'
+
+alias edit="$EDITOR"
+
+# Easy CDing
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+# Directory creation and deletion
+alias md='mkdir -p'
+alias rd='rmdir'
+
+# Git aliases
+alias ga='git add'
+alias gall='git add .'
+alias gs='git status'
+alias gl='git pull'
+alias gup='git fetch && git rebase'
+alias gc='git commit -v'
+alias gca='git commit -v -a'
+alias gci='git commit --interactive'
+alias gb='git branch'
+alias gba='git branch -a'
+alias gnb='git branch -b'
+alias gdel='git branch -D'
+alias gmu='git fetch origin -v; git fetch upstream -v; git merge upstream/master'
+alias gll='git log --graph --pretty=oneline --abbrev-commit'
+alias grma='git ls-files --deleted | xargs git rm'
+alias gd='git difftool'
+
+# Composer aliases
+alias cup='php composer.phar update'
+alias cin='php compouser.phar install'
+alias csup='php composer.phar self-update'
+alias getcomposer='curl -s https://getcomposer.org/installer | php'
+
+alias getscrutinizr='wget https://scrutinizer-ci.com/scrutinizer.phar'

@@ -1,0 +1,9 @@
+[submodule "bash-it"]
+	path = bash-it
+	url = git://github.com/jcarouth/bash-it.git
+[submodule "vimrc"]
+	path = vimrc
+	url = git://github.com/jcarouth/vimrc
+[submodule "shell/tmux-powerline"]
+	path = shell/tmux-powerline
+	url = git://github.com/erikw/tmux-powerline.git

@@ -1,0 +1,64 @@
+# Globals
+*.pydevproject
+.project
+.metadata
+tmp/**
+tmp/**/*
+*.bak
+*.tmp
+*.swp
+.classpath
+.settings/
+.loadpath
+.launch
+.cproject
+.buildpath
+
+TAGS
+tags
+
+# Mac OS X
+.DS_Store?
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Android development
+*.apk
+*.ap_
+*.dex
+*.class
+local.properties
+
+
+# Python development
+*.py[co]
+*.egg
+*.egg-info
+pip-log.txt
+.coverage
+.tox
+*.mo
+
+
+# Ruby development
+*.gem
+*.rbc
+.bundle
+bundle/
+
+# Vim files
+.*.sw[a-z]
+*.un~
+Session.vim
+.vim/tags/*
+
+# Vagrant
+.vagrant
+
+.idea
+
+# Composer
+composer.phar
+vendor/*
