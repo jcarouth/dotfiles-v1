@@ -7,6 +7,9 @@ export BASH_IT="$HOME/.bash_it"
 # location /.bash_it/themes/
 export BASH_IT_THEME='doubletime'
 
+# Your place for hosting Git repos. I use this for private repos.
+export GIT_HOSTING='git@git.domain.com'
+
 # Don't check mail when opening terminal.
 unset MAILCHECK
 
