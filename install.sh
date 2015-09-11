@@ -1,5 +1,4 @@
 ln -s ~/.dotfiles/bash-it/ ~/.bash_it
-ln -s ~/.dotfiles/bash_profile ~/.bash_profile
 ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/gitignore ~/.gitignore
 ln -s ~/.dotfiles/vimrc/gvimrc ~/.gvimrc
@@ -17,6 +16,10 @@ cd ../
 
 cd bash-it
 ./install.sh
+rm ~/.bash_profile
+ln -s ~/.dotfiles/bash_profile ~/.bash_profile
+. ~/.bash_profile
+
 bash-it enable alias general
 bash-it enable alias homebrew
 bash-it enable alias tmux
